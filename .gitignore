@@ -1,6 +1,18 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+# Dependencies
+node_modules/
+
+# Environment variables — copy to .env and fill in values
+.env
+
+# Cypress generated output
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
 .idea/
-/node_modules/
-reports/

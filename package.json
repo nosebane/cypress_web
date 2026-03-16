@@ -1,18 +1,20 @@
 {
-  "name": "cypresstest",
+  "name": "cypress-webtables-automation",
   "version": "1.0.0",
-  "description": "learn typescript",
-  "main": "index.js",
-  "repository": "git@github.com:nosebane/cypresstest.git",
-  "author": "ikhsandwidanu <ikhsan.dwi.danu@gmail.com>",
+  "description": "Cypress automation test for demoqa.com Web Tables using Page Object Model (POM) and data-driven testing",
+  "author": "Senior QA Engineer",
   "license": "MIT",
-  "devDependencies": {
-    "cypress": "^13.2.0",
-    "cypress-mochawesome-reporter": "^3.6.0",
-    "typescript": "^5.2.2"
-  },
   "scripts": {
-    "test:headed": "npx cypress run --browser chrome --headed",
-    "test": "npx cypress run --browser chrome"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser chrome",
+    "cy:run:positive": "cypress run --browser chrome --spec 'cypress/e2e/webTables/positive.cy.js'",
+    "cy:run:negative": "cypress run --browser chrome --spec 'cypress/e2e/webTables/negative.cy.js'",
+    "cy:run:all": "cypress run --browser chrome --spec 'cypress/e2e/webTables/*.cy.js'"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.3.1",
+    "cypress": "^13.17.0",
+    "cypress-real-events": "^1.15.0",
+    "dotenv": "^16.4.5"
   }
 }
