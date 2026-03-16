@@ -5,7 +5,6 @@ node_modules/
 .env
 
 # Cypress generated output
-cypress/videos/
 cypress/screenshots/
 cypress/downloads/
 
